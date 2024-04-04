@@ -1,5 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:shimmer/shimmer.dart';
 
 import '../../../../core/utils/app_colors.dart';
 
@@ -17,10 +19,14 @@ class ProjectImage extends StatelessWidget {
         width: double.infinity,
         fit: BoxFit.cover,
         errorWidget: (context, url, error) {
-          return Icon(
-            Icons.error,
-            color: AppColors.darkColor,
-            size: 50,
+          return Shimmer.fromColors(
+            baseColor: Colors.grey,
+            highlightColor: Colors.grey.shade50,
+            child: Icon(
+              FontAwesomeIcons.image,
+              color: AppColors.darkColor,
+              size: 50,
+            ),
           );
         },
       ),

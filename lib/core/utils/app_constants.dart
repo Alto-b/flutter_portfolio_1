@@ -28,7 +28,7 @@ abstract class AppConstants {
     Project(
       name: 'Live score',
       imageUrl:
-          'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB',
+          'https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960',
       description:
           'A football application to display all related matches and rankings in all international and local tournaments',
       githubRepoLink: 'https://github.com/radyhaggag/live_score',

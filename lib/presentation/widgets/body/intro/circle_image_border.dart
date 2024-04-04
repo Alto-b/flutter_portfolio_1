@@ -19,7 +19,7 @@ class CircleImageBorder extends StatelessWidget {
       width: responsiveSize.getSize(),
       height: responsiveSize.getSize(),
       decoration: BoxDecoration(
-        color: AppColors.primaryColor,
+        color: AppColors.primaryColor.withOpacity(0.02),
         shape: BoxShape.circle,
       ),
     );
